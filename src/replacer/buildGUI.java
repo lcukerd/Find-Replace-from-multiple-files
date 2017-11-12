@@ -1,20 +1,14 @@
 package replacer;
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
-import java.awt.FileDialog;
 import java.awt.Font;
-import java.awt.Frame;
 import java.awt.TextArea;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
-import javax.swing.ButtonGroup;
 import javax.swing.GroupLayout;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
@@ -23,13 +17,9 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.GroupLayout.Alignment;
-import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
 
 import replacer.buildGUI;
-
-import javax.swing.JRadioButton;
-
 
 public class buildGUI extends JFrame {
 
@@ -117,7 +107,6 @@ public class buildGUI extends JFrame {
 		JButton startRename = new JButton("Start find-replace");
 		startRename.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		startRename.addActionListener(new startRename());
-		ButtonGroup bG = new ButtonGroup();
 		
 		doneCount = new JTextField();
 		doneCount.setHorizontalAlignment(SwingConstants.CENTER);
